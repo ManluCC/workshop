@@ -5,13 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test the title</title>
+  <style>
+    table{
+      color:teal;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+    }
+    ol{
+      color:blue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30px;
+    }
+
+    .fruit {
+      color:blueviolet;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: cornsilk;
+      width: 20%;
+    }
+    
+    .orange{
+      color: orange;
+    }
+
+    h1{
+      color: saddlebrown;
+    }
+    h1.special_hi{
+      color:sandybrown
+    }
+
+    #submit_button{
+      background-color: silver;
+    }
+  </style>
 </head>
 <body >
-  <h1>Hello, me!</h1>
+  <h1><i><u>Hello</u>, me!</i></h1>
+  <h1 class="special_hi"><i><u>Hello</u>, you!</i></h1>
   <p style="background-color:#FF8A33;">This is a demonstration of a   paragragh.<br>
   We can have multiple lines.
   </p>
   <img src="https://cuhk.edu.hk/chinese/images/cuhk_logo_2x.png?20150907">
   <a href="https://www.cuhk.edu.hk">Link to CUHK Website</a>
+  <ol>
+    <li class="fruit">apples</li>
+    <li class="fruit">bananas</li>
+    <li class="fruit orange">oranges</li>
+  </ol>
+  <table cellspacing="0" cellpadding="5" border="1">
+    <tr><th>Student ID</th><th>First Name<th>Last name</th></tr>
+    <tr><td style="background-color: yellow;color: yellowgreen;">1001</td><td>Jack</td><td>Chan</td>
+    <tr><td class="orange">1002</td><td>Mike</td><td>Chan</td></tr>
+    <tr><td>1003</td><td>Marry</td><td>Chan</td></tr>
+  </table>
+  <form action="/dummy">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+    <button id="submit_button">Submit</button>
+  </form> 
 </body>
 </html>
